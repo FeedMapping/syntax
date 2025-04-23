@@ -159,11 +159,7 @@ runs:
                 git push origin --delete gh-pages
                 git push origin gh-pages
                 echo "Re-pushed local gh-pages with docs"
-              else
-                echo "Remote gh-pages already contains 'docs' — skipping"
               fi
-            else
-              echo "Branch $local_branch exists and is not gh-pages — skipping"
             fi
           fi
         done
